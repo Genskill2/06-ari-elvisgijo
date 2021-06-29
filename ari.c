@@ -1,4 +1,4 @@
-string ari(string s) {
+char* ari(char* s) {
     int lc = 0;
     int wc = 1;
     int sc = 0;
