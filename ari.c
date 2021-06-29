@@ -4,7 +4,7 @@ string ari(string s) {
     int sc = 0;
     for (int i = 0; i < strlen(s); i++)
     {
-       if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+       if (isalnum(s))
        {
            lc++;
        }
