@@ -1,10 +1,10 @@
-char* ari(char* s) {
+string ari(string s) {
     int lc = 0;
     int wc = 1;
     int sc = 0;
-    for (int i = 0; s[i]!='\0'; i++)
+    for (int i = 0;i < strlen(s); i++)
     {
-       if (isalnum(s[i]))//(s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= '0' && s[i] <= '9'))
+       if (isalnum(s[i]))
        {
            lc+=1;
        }
@@ -18,59 +18,59 @@ char* ari(char* s) {
        }
     }
      float score = (4.71 * ((float) (lc / wc))) + (0.5 * ( (float) (wc / sc))) - 21.43;
-    if (round(score)==1.000000)
+    if (score>1.0 && score<2.0)
     {
         return "Kindergarden";
     }
-    else if (round(score)==2.000000)
+    else if (score>1.5 && score<3.0)
     {
        return "First/Second Grade";
     }
-    else if(round(score)==3.000000)
+    else if(score>2.5 && score<4.0)
     {
         return "Third Grade";
     }
-     else if(round(score)==4.000000)
+     else if(score>3.5 && score<5.0)
     {
         return "Fourth Grade";
     }
-     else if(round(score)==5.000000)
+     else if(score>4.5 && score<6.0)
     {
         return "Fifth Grade";
     }
-     else if(round(score)==6.000000)
+     else if(score>5.5 && score<7.0)
     {
         return "Sixth Grade";
     }
-     else if(round(score)==7.000000)
+     else if(score>6.5 && score<8.0)
     {
         return "Seventh Grade";
     }
-     else if(round(score)==8.000000)
+     else if(score>7.5 && score<9.0)
     {
         return "Eighth Grade";
     }
-     else if(round(score)==9.000000)
+     else if(score>8.5 && score<10.0)
     {
         return "Ninth Grade";
     }
-     else if(round(score)==10.000000)
+     else if(score>9.5 && score<11.0)
     {
         return "Tenth Grade";
     }
-     else if(round(score)==11.000000)
+     else if(score>10.5 && score<12.0)
     {
         return "Eleventh Grade";
     }
-     else if(round(score)==12.000000)
+     else if(score>11.5 && score<13.0)
     {
         return "Twelfth Grade";
     }
-     else if(round(score)==13.000000)
+     else if(score>12.5 && score<14.0)
     {
         return "College student";
     }
-    else
+    else if(score>=14.0)
      { return "Professor";
     }
 
