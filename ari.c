@@ -4,69 +4,69 @@ char* ari(char* s) {
     int sc = 0;
     for (int i = 0; s[i]!='\0'; i++)
     {
-       if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= '0' && s[i] <= '9'))
+       if (isalnum(s[i]))//(s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= '0' && s[i] <= '9'))
        {
-           lc++;
+           lc+=1;
        }
        else if (s[i] == ' ')
        {
-           wc++;
+           wc+=1;
        }
        else if (s[i] == '.' || s[i] == '!' || s[i] == '?')
        {
-           sc++;
+           sc+=1;
        }
     }
-     float score = (4.71 * ((float) lc / (float) wc)) + (0.5 * ( (float) wc / (float) sc)) - 21.43;
-    if (score<=1.000000 && score>=1.999999)
+     float score = (4.71 * ((float) (lc / wc))) + (0.5 * ( (float) (wc / sc))) - 21.43;
+    if (round(score)==1.000000)
     {
         return "Kindergarden";
     }
-    else if (score<=2.000000 && score>=2.999999)
+    else if (round(score)==2.000000)
     {
        return "First/Second Grade";
     }
-    else if(score<=3.000000 && score>=3.999999)
+    else if(round(score)==3.000000)
     {
         return "Third Grade";
     }
-     else if(score<=4.000000 && score>=4.999999)
+     else if(round(score)==4.000000)
     {
         return "Fourth Grade";
     }
-     else if(score<=5.000000 && score>=5.999999)
+     else if(round(score)==5.000000)
     {
         return "Fifth Grade";
     }
-     else if(score<=6.000000 && score>=6.999999)
+     else if(round(score)==6.000000)
     {
         return "Sixth Grade";
     }
-     else if(score<=7.000000 && score>=7.999999)
+     else if(round(score)==7.000000)
     {
         return "Seventh Grade";
     }
-     else if(score<=8.000000 && score>=8.999999)
+     else if(round(score)==8.000000)
     {
         return "Eighth Grade";
     }
-     else if(score<=9.000000 && score>=9.999999)
+     else if(round(score)==9.000000)
     {
         return "Ninth Grade";
     }
-     else if(score<=10.000000 && score>=10.999999)
+     else if(round(score)==10.000000)
     {
         return "Tenth Grade";
     }
-     else if(score<=11.000000 && score>=11.999999)
+     else if(round(score)==11.000000)
     {
         return "Eleventh Grade";
     }
-     else if(score<=12.000000 && score>=12.999999)
+     else if(round(score)==12.000000)
     {
         return "Twelfth Grade";
     }
-     else if(score<=13.000000 && score>=13.999999)
+     else if(round(score)==13.000000)
     {
         return "College student";
     }
