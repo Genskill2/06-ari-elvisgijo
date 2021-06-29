@@ -1,4 +1,4 @@
-string s(string s) {
+string ari(string s) {
      int lc = 0;
     int wc = 1;
     int sc = 0;
