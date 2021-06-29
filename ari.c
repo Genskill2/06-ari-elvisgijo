@@ -1,5 +1,5 @@
 string ari(string s) {
-     int lc = 0;
+    int lc = 0;
     int wc = 1;
     int sc = 0;
     for (int i = 0; i < strlen(s); i++)
