@@ -2,9 +2,9 @@ char* ari(char* s) {
     int lc = 0;
     int wc = 1;
     int sc = 0;
-    for (int i = 0; i < strlen(s); i++)
+    for (int i = 0; i < s[i]!='\0'; i++)
     {
-       if (isalnum(s))
+       if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= '0' && s[i] <= '9'))
        {
            lc++;
        }
