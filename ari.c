@@ -21,7 +21,7 @@ string ari (string s) {
            sc+=1;
        }
     }
-     float score = (4.71 * ((float) (lc / wc))) + (0.5 * ( (float) (wc / sc))) - 21.43;
+   float score = (4.71 * ((float) (lc / wc))) + (0.5 * ( (float) (wc / sc))) - 21.43;
     if (score>1.0 && score<2.0)
     {
         return "Kindergarden";
@@ -75,7 +75,7 @@ string ari (string s) {
         return "College student";
     }
     else if(score>=14.0)
-     { return "Professor";
+     {
+        return "Professor";
     }
-
 }
