@@ -21,56 +21,56 @@ string ari (string s) {
            sc+=1;
        }
     }
-   float score = (4.71 * ((float) (lc / wc))) + (0.5 * ( (float) (wc / sc))) - 21.43;
-    if (score>1.0 && score<2.0)
+   int score = (4.71 * ( (lc / wc))) + (0.5 * ( (wc / sc))) - 21.43;
+    if (score==1)
     {
         return "Kindergarden";
     }
-    else if (score>1.5 && score<3.0)
+    else if (score==2)
     {
        return "First/Second Grade";
     }
-    else if(score>2.5 && score<4.0)
+    else if(score==3)
     {
         return "Third Grade";
     }
-     else if(score>3.5 && score<5.0)
+     else if(score==4)
     {
         return "Fourth Grade";
     }
-     else if(score>4.5 && score<6.0)
+     else if(score==5)
     {
         return "Fifth Grade";
     }
-     else if(score>5.5 && score<7.0)
+     else if(score==6)
     {
         return "Sixth Grade";
     }
-     else if(score>6.5 && score<8.0)
+     else if(score==7)
     {
         return "Seventh Grade";
     }
-     else if(score>7.5 && score<9.0)
+     else if(score==8)
     {
         return "Eighth Grade";
     }
-     else if(score>8.5 && score<10.0)
+     else if(score==9)
     {
         return "Ninth Grade";
     }
-     else if(score>9.5 && score<11.0)
+     else if(score==10)
     {
         return "Tenth Grade";
     }
-     else if(score>10.5 && score<12.0)
+     else if(score==11)
     {
         return "Eleventh Grade";
     }
-     else if(score>11.5 && score<13.0)
+     else if(score==12)
     {
         return "Twelfth Grade";
     }
-     else if(score>12.5 && score<14.0)
+     else if(score==13)
     {
         return "College student";
     }
