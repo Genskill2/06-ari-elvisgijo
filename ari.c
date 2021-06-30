@@ -1,6 +1,6 @@
 #include<cs50.h>
 #include<string.h>
-#include<stdlib.h>
+#include<ctype.h>
 
 string ari (string s) {
     int lc = 0;
