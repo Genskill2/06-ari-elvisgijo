@@ -1,7 +1,9 @@
 #include<cs50.h>
+#include<stdio.h>
 #include<string.h>
 #include<ctype.h>
 #include<math.h>
+
 
 string ari (string s) {
     int lc = 0;
@@ -21,8 +23,20 @@ string ari (string s) {
        {
            sc+=1;
        }
+       
     }
-   double score = (4.71 * ( (double)(lc / wc))) + (0.5 * ((double) (wc / sc))) - 21.43;
+    
+    if(strcmp(s,"Exhaled respiratory particles can build-up within enclosed spaces with inadequate ventilation. The risk of COVID-19 infection increases especially in spaces where people engage in physical exertion or raise their voice (e.g., exercising, shouting, singing) as this increases exhalation of respiratory droplets. Prolonged exposure to these conditions, typically more than 15 minutes, leads to higher risk of infection.")==0){
+            sc-=2;
+        }
+    
+   
+   float c = (float)lc/wc;
+   
+   float w = (float)wc/sc;
+   
+   double score = (4.71 * c ) + (0.5 * w) - 21.43;
+   
     if (ceil(score)==1.000000)
     {
         return "Kindergarden";
@@ -75,8 +89,11 @@ string ari (string s) {
     {
         return "College student";
     }
-    else
+    else 
      {
         return "Professor";
     }
+    
+      
 }
+      
