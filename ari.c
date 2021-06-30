@@ -1,6 +1,7 @@
 #include<cs50.h>
 #include<string.h>
 #include<ctype.h>
+#include<math.h>
 
 string ari (string s) {
     int lc = 0;
@@ -21,56 +22,56 @@ string ari (string s) {
            sc+=1;
        }
     }
-   int score = (4.71 * ( (lc / wc))) + (0.5 * ( (wc / sc))) - 21.43;
-    if (score==1)
+   float score = (4.71 * ( (float)(lc / wc))) + (0.5 * ((float) (wc / sc))) - 21.43;
+    if (random(score)==1.0)
     {
         return "Kindergarden";
     }
-    else if (score==2)
+    else if ((random)score==2.0)
     {
        return "First/Second Grade";
     }
-    else if(score==3)
+    else if((random)score==3.0)
     {
         return "Third Grade";
     }
-     else if(score==4)
+     else if((random)score==4.0)
     {
         return "Fourth Grade";
     }
-     else if(score==5)
+     else if((random)score==5.0)
     {
         return "Fifth Grade";
     }
-     else if(score==6)
+     else if((random)score==6.0)
     {
         return "Sixth Grade";
     }
-     else if(score==7)
+     else if((random)score==7.0)
     {
         return "Seventh Grade";
     }
-     else if(score==8)
+     else if((random)score==8.0)
     {
         return "Eighth Grade";
     }
-     else if(score==9)
+     else if((random)score==9.0)
     {
         return "Ninth Grade";
     }
-     else if(score==10)
+     else if((random)score==10.0)
     {
         return "Tenth Grade";
     }
-     else if(score==11)
+     else if((random)score==11.0)
     {
         return "Eleventh Grade";
     }
-     else if(score==12)
+     else if((random)score==12.0)
     {
         return "Twelfth Grade";
     }
-     else if(score==13)
+     else if((random)score==13.0)
     {
         return "College student";
     }
