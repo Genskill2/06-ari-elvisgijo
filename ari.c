@@ -74,7 +74,7 @@ string ari (string s) {
     {
         return "College student";
     }
-    else if(score>=14.0)
+    else
      {
         return "Professor";
     }
