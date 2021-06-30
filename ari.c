@@ -22,56 +22,56 @@ string ari (string s) {
            sc+=1;
        }
     }
-   float score = (4.71 * ( (float)(lc / wc))) + (0.5 * ((float) (wc / sc))) - 21.43;
-    if (rand(score)==1.0)
+   double score = (4.71 * ( (double)(lc / wc))) + (0.5 * ((double) (wc / sc))) - 21.43;
+    if (ceil(score)==1.000000)
     {
         return "Kindergarden";
     }
-    else if (rand(score)==2.0)
+    else if (ceil(score)==2.000000)
     {
        return "First/Second Grade";
     }
-    else if(rand(score)==3.0)
+    else if(ceil(score)==3.000000)
     {
         return "Third Grade";
     }
-     else if(rand(score)==4.0)
+     else if(ceil(score)==4.000000)
     {
         return "Fourth Grade";
     }
-     else if(rand(score)==5.0)
+     else if(ceil(score)==5.000000)
     {
         return "Fifth Grade";
     }
-     else if(rand(score)==6.0)
+     else if(ceil(score)==6.000000)
     {
         return "Sixth Grade";
     }
-     else if(rand(score)==7.0)
+     else if(ceil(score)==7.000000)
     {
         return "Seventh Grade";
     }
-     else if(rand(score)==8.0)
+     else if(ceil(score)==8.000000)
     {
         return "Eighth Grade";
     }
-     else if(rand(score)==9.0)
+     else if(ceil(score)==9.000000)
     {
         return "Ninth Grade";
     }
-     else if(rand(score)==10.0)
+     else if(ceil(score)==10.000000)
     {
         return "Tenth Grade";
     }
-     else if(rand(score)==11.0)
-    {
+     else if(ceil(score)==11.000000)
+     {
         return "Eleventh Grade";
     }
-     else if(rand(score)==12.0)
+     else if(ceil(score)==12.000000)
     {
         return "Twelfth Grade";
     }
-     else if(rand(score)==13.0)
+     else if(ceil(score)==13.000000)
     {
         return "College student";
     }
